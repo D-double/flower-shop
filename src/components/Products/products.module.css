@@ -1,0 +1,22 @@
+.products {
+    padding: 0 170px;
+}
+
+.products__title,
+.products__subtitle {
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(33, 0, 48, 0.5);
+}
+
+.products__subtitle {
+    color: var(--osnovnoy);
+}
+
+.products__list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px 10px;
+}

@@ -1,0 +1,38 @@
+.home {
+  background-color: #f5f5f5;
+  padding: 70px 0 100px;
+}
+
+.home__box {
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 16px;
+  width: 1217px;
+  height: 351px;
+  padding: 29px 70px;
+  background-image: url(../../assets/home/banner_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__box-title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #575757;
+}
+.home__box-title-mod {
+  color: #c764e8;
+}
+
+.home__box-subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  color: #575757;
+  margin-top: 83px;
+}
+
+.home__products {
+  padding-top: 70px;
+  display: grid;
+  gap: 30px;
+}

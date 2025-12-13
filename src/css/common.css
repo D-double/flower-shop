@@ -1,0 +1,64 @@
+:root {
+    --osnovnoy: #210030;
+    --osnovnoy-fioletovyy: #c274e4;
+    --fioletovyy-svetlyy: #de9ff9;
+    --vtorichnyy-svetlo-seryy: #e9e9e9;
+    --vtorichnyy-temno-seryy: #d9d9d9;
+    --vtorichnyy-chernyy: #000;
+    --vtorichnyy-zheltyy: #e2da00;
+
+    --font-family: "Nunito", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Open Sans", sans-serif;
+    --font3: "Montserrat Alternates", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #000;
+    background: #F5F5F5;
+    font-family: "Nunito", sans-serif;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    background: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.text-limit {
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
