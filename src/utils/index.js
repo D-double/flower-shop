@@ -11,7 +11,12 @@ import arrowBlack from '../assets/icons/arrow-black.svg';
 import starIcon from '../assets/icons/star.svg';
 import shopIcon from '../assets/icons/shop.svg';
 import cartIcon from '../assets/icons/cart.svg';
+import social1 from '../assets/icons/social-1.svg';
+import social2 from '../assets/icons/social-2.svg';
+import social3 from '../assets/icons/social-3.svg';
+import social4 from '../assets/icons/social-4.svg';
 import card from '../assets/card-image.jpg';
+
 
 export const images = {
     ball1,
@@ -30,5 +35,9 @@ export const icons = {
     arrowBlack,
     starIcon,
     shopIcon,
-    cartIcon
+    cartIcon,
+    social1,
+    social2,
+    social3,
+    social4
 }
