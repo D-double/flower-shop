@@ -10,7 +10,7 @@
     left: 0;
     max-height: 100%;
     overflow-y: auto;
-    z-index: 999;
+    z-index: 99;
 }
 
 .footer__nav {

@@ -1,7 +1,7 @@
 import { images } from "../../utils";
 import CategoriesItem from "./CategoriesItem";
-import { Swiper, SwiperSlide } from "swiper/react";
 import s from "./categories.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
@@ -118,7 +118,6 @@ const Categories = () => {
       <Swiper
         spaceBetween={50}
         slidesPerView={3}
-        onSlideChange={() => console.log("slide change")} 
         navigation={true}
         modules={[Navigation]}
       >

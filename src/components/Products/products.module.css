@@ -1,5 +1,5 @@
 .products {
-    padding: 0 170px;
+    /* padding: 0 170px; */
 }
 
 .products__title,
@@ -16,7 +16,29 @@
 
 .products__list {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 30px 10px;
+    max-width: 1560px;
+    width: 100%;
+    margin: 30px auto 0 auto;
+    padding: 0 50px;
+    position: relative;
+
+    :global(.swiper-wrapper) {
+        row-gap: 30px;
+    }
+}
+
+.products__prev, .products__next {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 149px;
+    background: linear-gradient(to right, var(--body-bg), var(--body-bg-transparent));
+    z-index: 3;
+}
+
+.products__next {
+    left: auto;
+    right: 0;
+    transform: rotate(180deg);
 }
