@@ -1,5 +1,6 @@
 :root {
     --osnovnoy: #210030;
+    --osnovnoy-transparent: rgba(33, 0, 48, 0.6);
     --osnovnoy-fioletovyy: #c274e4;
     --fioletovyy-svetlyy: #de9ff9;
     --vtorichnyy-svetlo-seryy: #e9e9e9;
@@ -36,7 +37,7 @@ ul {
 body {
     color: var(--dark);
     background: var(--body-bg);
-    font-family: "Nunito", sans-serif;
+    font-family: var(--font-family);
 }
 
 input,

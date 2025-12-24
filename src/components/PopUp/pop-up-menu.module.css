@@ -1,0 +1,36 @@
+.popMenu {
+  border-radius: 15px;
+  padding: 12px;
+  background: var(--light);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--vtorichnyy-chernyy);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+
+  position: absolute;
+  top: 10%;
+  right: 0;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  padding: 12px;
+  max-width: 418px;
+}
+
+.popMenu__close img {
+  width: 30px;
+}
+
+.popMenu__link {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.popMenu__title {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}

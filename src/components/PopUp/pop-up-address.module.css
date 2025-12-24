@@ -1,0 +1,51 @@
+.popAddress {
+  max-width: 730px;
+  width: 100%;
+
+}
+
+.popAddress__desc {
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.popAddress__wrapper {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.popAddress__data {
+  display: grid;
+  grid-template-columns: 20px max-content;
+  column-gap: 11px;
+  padding: 8px 11px 2px;
+  border-radius: 7px;
+  background: var(--body-bg);
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(33, 0, 48, 0.5);
+
+  img {
+    grid-row: span 2;
+    width: 20px;
+  }
+}
+
+.popAddress__btn {
+  border-radius: 7px;
+  padding: 9px 18px;
+  background: var(--osnovnoy-fioletovyy);
+  font-weight: 600;
+  color: #fff;
+}
+
+.popAddress__map {
+  max-width: 730px;
+  width: 100%;
+  max-height: 400px;
+}
