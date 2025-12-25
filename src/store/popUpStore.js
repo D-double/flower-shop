@@ -10,6 +10,10 @@ export const usePopUpStore = create((set) => ({
   setStreet: (val) => set({ street: val }),
   city: null,
   setCity: (val) => set({ city: val }),
+  selected: null,
+  setSelected: (val) => set(()=>{
+    return {selected: val}
+  }),
   confirmTitle: '',
   setConfirmTitle: (val) => set({ confirmTitle: val }),
   confirm: true,

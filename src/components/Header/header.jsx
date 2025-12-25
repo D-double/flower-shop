@@ -52,7 +52,7 @@ function Header() {
             <button className="header__nav-btn" onClick={()=>setModalName(true)}>
               <img src={user_icon} alt="войти" />
             </button>
-            <button className="header__nav-btn" onClick={()=>setModalName(true)}>
+            <button className="header__nav-btn" onClick={()=>setModalName(modalNames.cart)}>
               <img src={basket_icon} alt="корзина" />
             </button>
           </div>

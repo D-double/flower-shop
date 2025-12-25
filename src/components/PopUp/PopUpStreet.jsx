@@ -13,14 +13,14 @@ const streets = [
 ];
 
 const PopUpStreet = () => {
-  const { setModalName, street, setStreet, setConfirmTitle } = usePopUpStore();
+  const { street, setStreet, setConfirmTitle } = usePopUpStore();
   const [alignment, setAlignment] = useState(street ? street.id : 1);
   const clickHandler = (newAlignment)=>{
     setAlignment(newAlignment)
     const seleted = streets.find((elem)=> elem.id == newAlignment)
     setStreet(seleted)
     setConfirmTitle(`Ваша улица ${seleted.name}`)
-    setModalName(modalNames.confirm)
+    // setModalName(modalNames.confirm)
   }
 
   return (

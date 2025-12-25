@@ -5,10 +5,9 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import { usePopUpStore } from "../../store/popUpStore";
 
 const PopUpConfirm = () => {
-  const { confirmTitle, setConfirm, setOpen } = usePopUpStore();
+  const { confirmTitle, setConfirm } = usePopUpStore();
   const clickHandler = (val)=>{
     setConfirm(val)
-    setOpen(false)
   }
   return (
     <div className={s.popConfirm}>

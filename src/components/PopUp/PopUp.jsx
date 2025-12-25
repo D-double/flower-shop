@@ -7,6 +7,7 @@ import PopUpAddress from "./PopUpAddress";
 import PopUpDate from "./PopUpDate";
 import PopUpStreet from "./PopUpStreet";
 import PopUpConfirm from "./PopUpConfirm";
+import PopUpCart from "./PopUpCart";
 
 
 
@@ -32,6 +33,8 @@ const PopUp = () => {
           <PopUpStreet/> :
           modalName == modalNames.confirm ? 
           <PopUpConfirm/> :
+          modalName == modalNames.cart ? 
+          <PopUpCart/> :
           <PopUpAuth/> 
           
         }

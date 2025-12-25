@@ -5,6 +5,7 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 
 const PopUpSelect = ({list, title, holder, onClick, alignment}) => {
+  
   const handleChange = (event, newAlignment) => {
     onClick(newAlignment);
   };
@@ -19,12 +20,11 @@ const PopUpSelect = ({list, title, holder, onClick, alignment}) => {
         value={alignment}
         exclusive
         onChange={handleChange}
-        aria-label="Street"
+        // aria-label="Street"
         className={s.popSelect__group}
       >
         {list.map((elem) => (
           <ToggleButton
-            // onClick={onClick}
             className={s.popSelect__btn}
             key={elem.id}
             value={elem.id}
