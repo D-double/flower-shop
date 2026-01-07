@@ -12,10 +12,28 @@ export const usePopUpStore = create((set) => ({
   setCity: (val) => set({ city: val }),
   selected: null,
   setSelected: (val) => set(()=>{
-    return {selected: val}
+    return {
+      selected: val, 
+      modalName: modalNames.confirm,
+      open: true
+    }
   }),
-  confirmTitle: '',
-  setConfirmTitle: (val) => set({ confirmTitle: val }),
-  confirm: true,
-  setConfirm: (val) => set({ confirm: val }),
+  setConfirm: (val) => set((state)=>{ 
+    if (val && state.selected) {
+      return state.selected.type == modalNames.street ?
+      {
+        street: state.selected.data,
+        modalName: modalNames.address
+      } :
+      {
+        city: state.selected.data,
+        modalName: modalNames.street
+      }
+    } else if(state.selected) {
+      return {
+        selected: null,
+        modalName: state.selected.type
+      }
+    }
+  }),
 }))

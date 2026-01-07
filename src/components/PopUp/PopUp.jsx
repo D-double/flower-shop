@@ -5,7 +5,7 @@ import modalNames from "../../utils/modalNames";
 import PopUpMenu from "./PopUpMenu";
 import PopUpAddress from "./PopUpAddress";
 import PopUpDate from "./PopUpDate";
-import PopUpStreet from "./PopUpStreet";
+import PopUpList from "./PopUpList";
 import PopUpConfirm from "./PopUpConfirm";
 import PopUpCart from "./PopUpCart";
 
@@ -30,7 +30,9 @@ const PopUp = () => {
           modalName == modalNames.date ? 
           <PopUpDate/> :
           modalName == modalNames.street ? 
-          <PopUpStreet/> :
+          <PopUpList type={modalNames.street}/> :
+          modalName == modalNames.city ? 
+          <PopUpList type={modalNames.city}/> :
           modalName == modalNames.confirm ? 
           <PopUpConfirm/> :
           modalName == modalNames.cart ? 

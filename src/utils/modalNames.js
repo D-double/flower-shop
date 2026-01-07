@@ -4,6 +4,7 @@ const modalNames = {
     address: 'address',
     date: 'date',
     street: 'street',
+    city: 'city',
     confirm: 'confirm',
     cart: 'cart',
 }

@@ -33,7 +33,7 @@ function Header() {
                 placeholder="Поиск"
               />
             </div>
-            <div className="header__nav-choose" onClick={()=>setModalName(modalNames.address)}>
+            <div className="header__nav-choose" onClick={()=>setModalName(modalNames.city)}>
               <img src={location_icon} alt="местоположение" />
               <div className="header__nav-choose-texts">
                 <p className="header__nav-choose-texts-title">Адрес доставки</p>
